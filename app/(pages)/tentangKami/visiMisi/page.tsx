@@ -1,4 +1,4 @@
-import { arsenal, rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import React from 'react'
 
 export default function VisiMisi() {

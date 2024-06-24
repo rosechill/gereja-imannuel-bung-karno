@@ -1,4 +1,4 @@
-import { arsenal } from '@/app/layout'
+import { arsenal } from '@/app/ui/font'
 import React from 'react'
 
 export type datajadwal = {

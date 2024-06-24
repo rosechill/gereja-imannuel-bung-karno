@@ -1,4 +1,4 @@
-import { rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import { dataPelayanan } from '@/app/lib/dataPelayanan'
 import React from 'react'
 import CardPelayanan from '../cardPelayanan'

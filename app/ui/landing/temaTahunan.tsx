@@ -1,5 +1,5 @@
-import { rightous } from '@/app/layout'
 import React from 'react'
+import { rightous } from '@/app/ui/font'
 import BorderSection from '../borderSection'
 
 export default function TemaTahunan() {

@@ -1,8 +1,7 @@
-import { arsenal, rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import BorderSection from '@/app/ui/borderSection'
 import React from 'react'
 import TableIbadah from './tableIbadah'
-import Link from 'next/link'
 
 const data = [
   {

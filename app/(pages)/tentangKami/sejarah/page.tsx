@@ -1,5 +1,5 @@
-import { arsenal, rightous } from '@/app/layout'
 import React from 'react'
+import { arsenal, rightous } from '@/app/ui/font'
 
 export default function Sejarah() {
   return (

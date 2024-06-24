@@ -1,4 +1,4 @@
-import { arsenal, rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import BorderSection from '@/app/ui/borderSection'
 import { Bri, QrisPersembahan, mandiri } from '@/public/images'
 import Image from 'next/image'

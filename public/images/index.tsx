@@ -14,6 +14,7 @@ import Qris from './qris.png'
 import QrisPersembahan from './qrisPersembahan.png'
 import Bri from './bri.png'
 import mandiri from './mandiri.png'
+import Galeri1 from './gallery.png'
 
 export {
   LogoWithName,
@@ -32,4 +33,5 @@ export {
   QrisPersembahan,
   Bri,
   mandiri,
+  Galeri1,
 }

@@ -1,4 +1,4 @@
-import { rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import React from 'react'
 import BorderSection from '../borderSection'
 import { Button } from '@nextui-org/react'

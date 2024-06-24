@@ -81,10 +81,10 @@ export const dataMenu = [
   },
   {
     title: 'Galeri',
-    link: '/faq',
+    link: '/galeri',
   },
   {
     title: 'Hubungi Kami',
-    link: '/faq',
+    link: '/hubungiKami',
   },
 ]

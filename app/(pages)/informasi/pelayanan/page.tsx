@@ -1,4 +1,4 @@
-import { arsenal, rightous } from '@/app/layout'
+import { arsenal, rightous } from '@/app/ui/font'
 import BorderSection from '@/app/ui/borderSection'
 import BorderSmallSection from '@/app/ui/borderSmallSection'
 import React from 'react'
