@@ -8,11 +8,15 @@ export const dataMenu = [
     submenu: [
       {
         title: 'Sejarah GPIB',
-        link: '/sejarah',
+        link: '/tentangKami/sejarah',
       },
       {
         title: 'Visi Misi GPIB',
-        link: '/visiMisi ',
+        link: '/tentangKami/visiMisi ',
+      },
+      {
+        title: 'Tema Tahunan',
+        link: '/tentangKami/temaTahunan ',
       },
     ],
   },
