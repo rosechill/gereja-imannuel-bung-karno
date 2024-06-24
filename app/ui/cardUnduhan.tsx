@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function CardUnduhan({ item, index }: { item: DataPelayanan; index: number }) {
   return (
-    <Link href={item.link} className="flex flex-col gap-4 py-4 h-full rounded-md relative justify-center items-center ">
+    <Link href={item.link} className="flex flex-col gap-4 py-4 h-full rounded-md relative justify-center items-center will-change-transform ">
       <Image
         src={item.imgPath}
         alt={item.title}
