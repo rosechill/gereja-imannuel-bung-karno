@@ -2,32 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utils {
+  .m-0-auto {
+    margin: 0 auto;
+  }
+  .bg-church-image {
+    background-image: url('../public/images/pelayananBackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer verticalbar {
+  ::-webkit-scrollbar {
+    height: 3px;
+    width: 8px;
+    background: gray;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background: #93918e;
+    border-radius: 10px;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer navigation {
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-item {
+    position: relative;
+  }
+
+  .menu-item > p,
+  .menu-item > span {
+    cursor: pointer;
+  }
+
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-item:hover .submenu,
+  .menu-item:focus-within .submenu {
+    display: block;
+  }
+
+  .submenu-item {
+    padding: 8px 16px;
+  }
+
+  .submenu-item > p,
+  .submenu-item > span {
+    cursor: pointer;
   }
 }
