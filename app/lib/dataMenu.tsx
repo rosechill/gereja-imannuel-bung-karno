@@ -25,19 +25,19 @@ export const dataMenu = [
     submenu: [
       {
         title: 'PHMJ',
-        link: '/phmj',
+        link: '/fungsionaris/phmj',
       },
       {
         title: 'Unit Misioner',
-        link: '/unitMisioner ',
+        link: '/fungsionaris/unitMisioner ',
       },
       {
         title: 'Kordinator Sektor',
-        link: '/kordinatorSektor',
+        link: '/fungsionaris/koordinatorSektor',
       },
       {
         title: 'Pelayanan Kategorial',
-        link: '/pelayananKategorial',
+        link: '/fungsionaris/pelayananKategorial',
       },
     ],
   },
