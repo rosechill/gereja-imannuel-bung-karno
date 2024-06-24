@@ -11,6 +11,9 @@ import WartaJemaat from './wartaJemaat.png'
 import TataIbadah from './tataIbadah.png'
 import FormulirLainnya from './formulirLainnya.png'
 import Qris from './qris.png'
+import QrisPersembahan from './qrisPersembahan.png'
+import Bri from './bri.png'
+import mandiri from './mandiri.png'
 
 export {
   LogoWithName,
@@ -26,4 +29,7 @@ export {
   TataIbadah,
   FormulirLainnya,
   Qris,
+  QrisPersembahan,
+  Bri,
+  mandiri,
 }

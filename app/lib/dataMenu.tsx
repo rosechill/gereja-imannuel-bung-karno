@@ -46,19 +46,19 @@ export const dataMenu = [
     submenu: [
       {
         title: 'Jadwal Ibadah',
-        link: '/jadwalIbadah',
+        link: '/informasi/jadwalIbadah',
       },
       {
         title: 'Pelayanan',
-        link: '/pelayanan ',
+        link: '/informasi/pelayanan ',
       },
       {
         title: 'Persembahan dan Donasi',
-        link: '/persembahanDonasi',
+        link: '/informasi/persembahanDonasi',
       },
       {
         title: 'Katekisasi',
-        link: '/katekisasi',
+        link: '/informasi/katekisasi',
       },
     ],
   },
@@ -67,15 +67,15 @@ export const dataMenu = [
     submenu: [
       {
         title: 'Warta Jemaat',
-        link: '/wartaJemaat',
+        link: '/unduhan/wartaJemaat',
       },
       {
         title: 'Tata Ibadah',
-        link: '/tataIbadah',
+        link: '/unduhan/tataIbadah',
       },
       {
         title: 'Formulis Lainnya',
-        link: '/formulisLainnya',
+        link: '/unduhan/formulisLainnya',
       },
     ],
   },
