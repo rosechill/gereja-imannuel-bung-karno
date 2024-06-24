@@ -4,31 +4,31 @@ export const dataPelayanan = [
   {
     title: 'Pelayanan Anak',
     imgPath: PelkatPA,
-    link: '/pelkatPA',
+    link: '/fungsionaris/pelayananKategorial/pelkatPA',
   },
   {
     title: 'Pelayanan Teruna',
     imgPath: PelkatPT,
-    link: '/pelkatPT',
+    link: '/fungsionaris/pelayananKategorial/pelkatPT',
   },
   {
     title: 'Gerakan Pemuda',
     imgPath: PelkatGP,
-    link: '/pelkatGP',
+    link: '/fungsionaris/pelayananKategorial/pelkatGP',
   },
   {
     title: 'Persekutuan Kaum Perempuan',
     imgPath: PelkatPKP,
-    link: '/pelkatPKP',
+    link: '/fungsionaris/pelayananKategorial/pelkatPKP',
   },
   {
     title: 'Persekutuan Kaum Bapak',
     imgPath: PelkatPKB,
-    link: '/pelkatPKB',
+    link: '/fungsionaris/pelayananKategorial/pelkatPKB',
   },
   {
     title: 'Persekutuan Kaum Lanjut Usia',
     imgPath: PelkatPKLU,
-    link: '/pelkatPKLU',
+    link: '/fungsionaris/pelayananKategorial/pelkatPKLU',
   },
 ]
