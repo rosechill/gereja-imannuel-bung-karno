@@ -12,11 +12,11 @@ export const dataMenu = [
       },
       {
         title: 'Visi Misi GPIB',
-        link: '/tentangKami/visiMisi ',
+        link: '/tentangKami/visiMisi',
       },
       {
         title: 'Tema Tahunan',
-        link: '/tentangKami/temaTahunan ',
+        link: '/tentangKami/temaTahunan',
       },
     ],
   },
@@ -29,7 +29,7 @@ export const dataMenu = [
       },
       {
         title: 'Unit Misioner',
-        link: '/fungsionaris/unitMisioner ',
+        link: '/fungsionaris/unitMisioner',
       },
       {
         title: 'Kordinator Sektor',
@@ -50,7 +50,7 @@ export const dataMenu = [
       },
       {
         title: 'Pelayanan',
-        link: '/informasi/pelayanan ',
+        link: '/informasi/pelayanan',
       },
       {
         title: 'Persembahan dan Donasi',

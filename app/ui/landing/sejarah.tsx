@@ -28,7 +28,15 @@ export default function Sejarah() {
       <div className={rightous.className}>
         <h1 className="text-3xl">Sejarah GPIB Immanuel Bung Karno</h1>
       </div>
-      <Image src={DummyVideo} alt="Video" className="m-0-auto rounded-md" />
+      {/* <Image src={DummyVideo} alt="Video" className="m-0-auto rounded-md" /> */}
+      <iframe
+        className="h-[600px] w-3/4 m-0-auto rounded-xl"
+        src="https://www.youtube.com/embed/2FXyzOMIlYk?si=K-U7K1x8EBDQRtQj"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="no-referrer"
+        allowFullScreen
+      ></iframe>
       <p className="italic font-bold">
         “Sejarah Pembentukan Gereja Protestan di Indonesia Bagian Barat (GPIB) Immanuel Bung Karno”
       </p>
