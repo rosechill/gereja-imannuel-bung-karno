@@ -5,7 +5,6 @@ import { Button, Navbar } from '@nextui-org/react'
 import { LogoWithName } from '@/public/images'
 import Image from 'next/image'
 import Link from 'next/link'
-import Hamburger from '@/public/icons/hamburger'
 import MenuMobile from './menuMobile'
 
 export default function Menu() {
@@ -19,7 +18,7 @@ export default function Menu() {
           <ListMenu key={index} item={item} index={index} />
         ))}
       </div>
-      <MenuMobile />
+      <MenuMobile/>
     </Navbar>
   )
 }
