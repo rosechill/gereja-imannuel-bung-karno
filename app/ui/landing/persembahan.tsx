@@ -1,3 +1,4 @@
+'use client'
 import { arsenal, rightous } from '@/app/ui/font'
 import React from 'react'
 import BorderSection from '../borderSection'
@@ -5,10 +6,27 @@ import Image from 'next/image'
 import { Qris } from '@/public/images'
 import Link from 'next/link'
 import { Button } from '@nextui-org/react'
+import { motion } from 'framer-motion'
+import useInView from '@/app/lib/intersectionObserver'
 
 export default function Persembahan() {
+  const [ref, isVisible] = useInView()
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   return (
-    <section className="py-desktop flex flex-col justify-center text-center gap-8 ">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={sectionVariants}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="py-desktop flex flex-col justify-center text-center gap-8 will-change-transform "
+    >
       <div className={rightous.className}>
         <h1 className="text-3xl">Persembahan & Donasi</h1>
       </div>
@@ -30,6 +48,6 @@ export default function Persembahan() {
       <Link href={'/'} className="flex justify-center items-center">
         <Button className="bg-greenPrimary text-whitePrimary text-center">Persembahan & Donasi</Button>
       </Link>
-    </section>
+    </motion.div>
   )
 }

@@ -1,10 +1,28 @@
+'use client'
 import React from 'react'
 import { rightous } from '@/app/ui/font'
 import BorderSection from '../borderSection'
+import { motion } from 'framer-motion'
+import useInView from '@/app/lib/intersectionObserver'
 
 export default function TemaTahunan() {
+  const [ref, isVisible] = useInView()
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  }
+
   return (
-    <section className="py-desktop flex flex-col justify-center text-center gap-8">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={sectionVariants}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="py-desktop flex flex-col justify-center text-center gap-8 will-change-transform"
+    >
       <BorderSection />
       <div className={rightous.className}>
         <div className="flex flex-col gap-2">
@@ -17,6 +35,6 @@ export default function TemaTahunan() {
         kesejahteraan bangsa” (Kisah Para Rasul 4 : 32)
       </p>
       <BorderSection />
-    </section>
+    </motion.div>
   )
 }

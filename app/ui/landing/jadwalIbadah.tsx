@@ -1,14 +1,31 @@
-import { arsenal, rightous } from '@/app/ui/font'
+'use client'
+import { rightous } from '@/app/ui/font'
 import React from 'react'
 import BorderSection from '../borderSection'
 import { Button } from '@nextui-org/react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import useInView from '@/app/lib/intersectionObserver'
 
 export default function JadwalIbadah() {
+  const [ref, isVisible] = useInView()
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  }
   return (
-    <section className="py-desktop flex flex-col justify-center  gap-8 ">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={sectionVariants}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="py-desktop flex flex-col justify-center  gap-8 will-change-transform"
+    >
       <div className={rightous.className}>
-        <h1 className="text-3xl text-center">Sejarah GPIB Immanuel Bung Karno</h1>
+        <h1 className="text-3xl text-center">Jadwal Ibadah</h1>
       </div>
       <BorderSection />
       <h2 className="font-bold text-xl text-center">Ibadah Hari Minggu III Sesudah Pentakosta</h2>
@@ -41,10 +58,10 @@ export default function JadwalIbadah() {
           </div>
         </div>
       </div>
-      <Link href={'/'} className='flex justify-center items-center'>
+      <Link href={'/informasi/jadwalIbadah'} className="flex justify-center items-center">
         <Button className="bg-greenPrimary text-whitePrimary text-center">Jadwal Lainnya</Button>
       </Link>
       <BorderSection />
-    </section>
+    </motion.div>
   )
 }

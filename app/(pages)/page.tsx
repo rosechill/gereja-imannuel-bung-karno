@@ -8,7 +8,7 @@ import Unduhan from '../ui/landing/unduhan'
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen">
+    <main className="flex flex-col min-h-screen will-change-transform overflow-hidden">
       <Hero />
       <TemaTahunan />
       <Sejarah />
