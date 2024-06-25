@@ -74,8 +74,8 @@ export const dataMenu = [
         link: '/unduhan/tataIbadah',
       },
       {
-        title: 'Formulis Lainnya',
-        link: '/unduhan/formulisLainnya',
+        title: 'Formulir Lainnya',
+        link: '/unduhan/formulirLainnya',
       },
     ],
   },
