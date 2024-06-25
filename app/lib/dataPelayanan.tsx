@@ -1,34 +1,34 @@
-import { PelkatGP, PelkatPA, PelkatPKB, PelkatPKLU, PelkatPKP, PelkatPT } from "@/public/images";
+import { PelkatGPLogo, PelkatPALogo, PelkatPKBLogo, PelkatPKLULogo, PelkatPKPLogo, PelkatPTLogo } from '@/public/images'
 
 export const dataPelayanan = [
   {
     title: 'Pelayanan Anak',
-    imgPath: PelkatPA,
+    imgPath: PelkatPALogo,
     link: '/fungsionaris/pelayananKategorial/pelkatPA',
   },
   {
     title: 'Pelayanan Teruna',
-    imgPath: PelkatPT,
+    imgPath: PelkatPTLogo,
     link: '/fungsionaris/pelayananKategorial/pelkatPT',
   },
   {
     title: 'Gerakan Pemuda',
-    imgPath: PelkatGP,
+    imgPath: PelkatGPLogo,
     link: '/fungsionaris/pelayananKategorial/pelkatGP',
   },
   {
     title: 'Persekutuan Kaum Perempuan',
-    imgPath: PelkatPKP,
+    imgPath: PelkatPKPLogo,
     link: '/fungsionaris/pelayananKategorial/pelkatPKP',
   },
   {
     title: 'Persekutuan Kaum Bapak',
-    imgPath: PelkatPKB,
+    imgPath: PelkatPKBLogo,
     link: '/fungsionaris/pelayananKategorial/pelkatPKB',
   },
   {
     title: 'Persekutuan Kaum Lanjut Usia',
-    imgPath: PelkatPKLU,
+    imgPath: PelkatPKLULogo,
     link: '/fungsionaris/pelayananKategorial/pelkatPKLU',
   },
 ]
