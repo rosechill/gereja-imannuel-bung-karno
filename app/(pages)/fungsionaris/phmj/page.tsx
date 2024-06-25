@@ -61,7 +61,7 @@ const dataJemaat = [
 ]
 export default function PHMJ() {
   return (
-    <section className="py-desktop flex flex-col justify-center gap-8 mt-20">
+    <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
         <h1 className="text-2xl text-center">PHMJ Periode 2022-2025</h1>
       </div>

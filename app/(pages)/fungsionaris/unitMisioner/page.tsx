@@ -84,9 +84,9 @@ const dataBpjj = [
 ]
 export default function UnitMisioner() {
   return (
-    <section className="py-desktop flex flex-col justify-center gap-8 mt-20">
+    <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
-        <h1 className="text-3xl text-center">UNIT MISIONER</h1>
+        <h1 className="desktop:text-3xl text-2xl text-center">UNIT MISIONER</h1>
       </div>
       <div className={arsenal.className}>
         <div className="w-3/4 m-0-auto">

@@ -30,7 +30,7 @@ export default function CardUnduhan({ item, index }: { item: DataPelayanan; inde
     >
       <Link
         href={item.link}
-        className="flex flex-col gap-4 py-4 h-full rounded-md relative justify-center items-center will-change-transform "
+        className="flex flex-col gap-4 desktop:py-4 py-0 h-full rounded-md relative justify-center items-center will-change-transform "
       >
         <Image
           src={item.imgPath}

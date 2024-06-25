@@ -14,10 +14,10 @@ export default function ListFooter() {
 
   return (
     <>
-      <div className='flex justify-between'>
+      <div className='flex desktop:flex-row flex-col desktop:gap-0 gap-12 desktop:justify-between justify-center'>
         <div>
           <div className={rightous.className}>
-            <h1 className="text-2xl pb-4">Persembahan & Donasi</h1>
+            <h1 className="desktop:text-2xl text-xl pb-4">GPIB Immanuel Bung Karno</h1>
           </div>
           <div className={arsenal.className}>
             <p>GPIB Immanuel Bung Karno adalah sebuah bangunan gereja yang</p>
@@ -29,7 +29,7 @@ export default function ListFooter() {
         </div>
         <div>
           <div className={rightous.className}>
-            <h1 className="text-2xl pb-4">Contact</h1>
+            <h1 className="desktop:text-2xl text-xl pb-4">Contact</h1>
           </div>
           <div className={arsenal.className}>
             <div className="flex flex-col gap-4 ">
@@ -74,7 +74,7 @@ export default function ListFooter() {
         </div>
         <div>
           <div className={rightous.className}>
-            <h1 className="text-2xl pb-4">Follow Us</h1>
+            <h1 className="desktop:text-2xl text-xl pb-4">Follow Us</h1>
           </div>
           <div className={arsenal.className}>
             <div className="flex gap-4">

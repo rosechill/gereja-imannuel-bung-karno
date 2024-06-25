@@ -11,7 +11,7 @@ export default function PelkatPT() {
       <Image src={PelkatPTbg} alt="pelkatPA" className="w-full" quality={100} />
       <div className={arsenal.className}>
         <div className="flex flex-col gap-8 w-3/4 m-0-auto">
-          <h1 className="text-3xl text-center font-bold">
+          <h1 className="desktop:text-3xl text-2xl text-center font-bold">
             Tentang PELKAT Persekutuan Teruna (PT) GPIB Immanuel Bung Karno
           </h1>
           <BorderBigSection />

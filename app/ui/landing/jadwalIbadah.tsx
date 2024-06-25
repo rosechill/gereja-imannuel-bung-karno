@@ -22,35 +22,35 @@ export default function JadwalIbadah() {
       variants={sectionVariants}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="py-desktop flex flex-col justify-center  gap-8 will-change-transform"
+      className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 will-change-transform"
     >
       <div className={rightous.className}>
-        <h1 className="text-3xl text-center">Jadwal Ibadah</h1>
+        <h1 className="desktop:text-3xl text-2xl text-center">Jadwal Ibadah</h1>
       </div>
       <BorderSection />
-      <h2 className="font-bold text-xl text-center">Ibadah Hari Minggu III Sesudah Pentakosta</h2>
-      <div className="w-full flex flex-col items-center font-bold ">
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4 bg-whiteSecondary">
+      <h2 className="font-bold desktop:text-xl text-center">Ibadah Hari Minggu III Sesudah Pentakosta</h2>
+      <div className="w-full flex flex-col items-center font-bold desktop:text-medium text-small">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4 bg-whiteSecondary">
           <p>Tanggal-Waktu :</p>
           <p>9 Juni 2024-09:00 WITA</p>
         </div>
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4">
           <p>Tema Ibadah :</p>
           <p>“Hidup sukses bersama Tuhan”</p>
         </div>
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4 bg-whiteSecondary">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4 bg-whiteSecondary">
           <p>Pembacaan Alkitab :</p>
           <p>Kejadian 39 : 1 - 10</p>
         </div>
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4">
           <p>Pelayan Firman :</p>
           <p>Pendeta Miss Pelletimu-Sono Bogar</p>
         </div>
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4 bg-whiteSecondary">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4 bg-whiteSecondary">
           <p>Kategori :</p>
           <p>Umum</p>
         </div>
-        <div className="grid grid-cols-2 w-4/6 py-3 px-4">
+        <div className="grid md:grid-cols-2 desktop:w-4/6 w-full py-3 px-4">
           <p>Keterangan: </p>
           <div className="flex flex-col gap-2 justify-start">
             <p>- Onsite</p>

@@ -7,7 +7,7 @@ export default function Container({ children }: { readonly children: React.React
     <ContainerProvider>
       <section className="min-h-screen w-full flex relative">
         <Menu />
-        <div className="flex flex-col w-full ">
+        <div className="flex flex-col w-full">
           <div className="flex-1">{children}</div>
           <Footer />
         </div>

@@ -1,6 +1,7 @@
 'use client'
 import { DataMenu } from '@/app/lib/definition'
 import { ChevronDown } from '@/public/icons'
+import Hamburger from '@/public/icons/hamburger'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -12,10 +13,10 @@ export default function ListMenu({
   index: number
 }>) {
   const pathname = usePathname()
-  console.log(pathname)
   return (
     <ul className="menu-list font-bold">
-      <li key={index} className="menu-item ">
+      {/* navbar desktop */}
+      <li key={index} className="menu-item">
         {item.link ? (
           <Link href={item.link} className={pathname === item.link ? 'text-greenPrimary' : ''}>
             <p>{item.title}</p>
@@ -32,7 +33,7 @@ export default function ListMenu({
               <li key={subIndex} className="submenu-item hover:text-greenPrimary">
                 {subItem.link ? (
                   <Link href={subItem.link} className={pathname === subItem.link ? 'text-greenPrimary' : ''}>
-                    <p >{subItem.title}</p>
+                    <p>{subItem.title}</p>
                   </Link>
                 ) : (
                   <span>{subItem.title}</span>

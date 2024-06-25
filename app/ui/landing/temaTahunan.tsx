@@ -21,16 +21,16 @@ export default function TemaTahunan() {
       variants={sectionVariants}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="py-desktop flex flex-col justify-center text-center gap-8 will-change-transform"
+      className="desktop:py-desktop py-8 flex flex-col justify-center text-center gap-8 will-change-transform"
     >
       <BorderSection />
       <div className={rightous.className}>
         <div className="flex flex-col gap-2">
-          <h1 className="text-3xl">Tema Tahunan GPIB</h1>
-          <h2 className="text-2xl">Periode 2024-2025</h2>
+          <h1 className="desktop:text-3xl text-2xl">Tema Tahunan GPIB</h1>
+          <h2 className="desktop:text-2xl tex-xl">Periode 2024-2025</h2>
         </div>
       </div>
-      <p className="text-xl px-80">
+      <p className="desktop:text-xl desktop:px-80">
         “Melayani dan bersaksi secara interaktif berbasis komunitas digital dengan semangat gotong royong demi
         kesejahteraan bangsa” (Kisah Para Rasul 4 : 32)
       </p>

@@ -57,9 +57,9 @@ const dataGallery: dataGallery[] = [
 
 export default function Gallery() {
   return (
-    <section className="py-desktop flex flex-col justify-center gap-8 mt-20">
+    <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
-        <h1 className="text-3xl text-center">GALERI</h1>
+        <h1 className="desktop:text-3xl text-2xl text-center">GALERI</h1>
       </div>
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-8 will-change-transform mx-40">
         {dataGallery.map((item, index) => (

@@ -23,14 +23,13 @@ export default function Sejarah() {
       variants={sectionVariants}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="py-desktop flex flex-col justify-center text-center gap-8 bg-whiteSecondary will-change-transform"
+      className="desktop:py-desktop py-8 flex flex-col justify-center text-center gap-8 bg-whiteSecondary will-change-transform"
     >
       <div className={rightous.className}>
-        <h1 className="text-3xl">Sejarah GPIB Immanuel Bung Karno</h1>
+        <h1 className="desktop:text-3xl text-2xl">Sejarah GPIB Immanuel Bung Karno</h1>
       </div>
-      {/* <Image src={DummyVideo} alt="Video" className="m-0-auto rounded-md" /> */}
       <iframe
-        className="h-[600px] w-3/4 m-0-auto rounded-xl"
+        className="md:desktop:h-[600px] h-[300px] md:w-3/4 w-full m-0-auto rounded-xl desktp:px-0 px-4"
         src="https://www.youtube.com/embed/2FXyzOMIlYk?si=K-U7K1x8EBDQRtQj"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
