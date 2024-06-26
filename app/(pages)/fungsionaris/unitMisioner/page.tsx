@@ -89,7 +89,7 @@ export default function UnitMisioner() {
         <h1 className="desktop:text-3xl text-2xl text-center">UNIT MISIONER</h1>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="md:w-3/4 md:px-0 px-4 m-0-auto">
           <p>
             Unit Misioner adalah wadah pembinaan warga jemaat dan pelaksana misi GPIB dalam rangka pembangunan jemaat
             secara berkesinambungan di bawah tanggung jawab majelis jemaat. Unit Misioner terdiri dari atas:
@@ -97,15 +97,15 @@ export default function UnitMisioner() {
         </div>
       </div>
       <div className={rightous.className}>
-        <h1 className="text-2xl text-center">Koordinator Pelayanan Kategorial</h1>
+        <h1 className="desktop:text-2xl text-xl text-center">Koordinator Pelayanan Kategorial</h1>
       </div>
       <BorderSection />
       <div className={arsenal.className}>
         <div className="w-full flex flex-col items-center ">
           {dataPelayanan.map((item, index) => (
-            <div key={index} className="flex  w-4/6 py-3 px-4">
-              <div className="flex w-[300px] gap-4">
-                <p className="w-[250px]">{item.position} </p>
+            <div key={index} className="flex  md:w-4/6 w-full py-3 px-4">
+              <div className="flex md:w-[300px] gap-4">
+                <p className="md:w-[250px] w-[150px]">{item.position} </p>
                 <p>:</p>
               </div>
               <p className="font-bold"> {item.name}</p>
@@ -115,14 +115,14 @@ export default function UnitMisioner() {
       </div>
       <BorderSection />
       <div className={rightous.className}>
-        <h1 className="text-2xl text-center">Komisi Jemaat</h1>
+        <h1 className="desktop:text-2xl text-xl text-center">Komisi Jemaat</h1>
       </div>
       <div className={arsenal.className}>
         <div className="w-full flex flex-col items-center ">
           {dataJemaat.map((item, index) => (
-            <div key={index} className="flex  w-4/6 py-3 px-4">
-              <div className="flex w-[300px] gap-4">
-                <p className="w-[250px]">{item.position} </p>
+            <div key={index} className="flex  md:w-4/6 w-full py-3 px-4">
+              <div className="flex md:w-[300px] gap-4">
+                <p className="md:w-[250px] w-[150px]">{item.position} </p>
                 <p>:</p>
               </div>
               <p className="font-bold"> {item.name}</p>
@@ -132,14 +132,14 @@ export default function UnitMisioner() {
       </div>
       <BorderSection />
       <div className={rightous.className}>
-        <h1 className="text-2xl text-center">BPPJ Jemaat</h1>
+        <h1 className="desktop:text-2xl text-xl text-center">BPPJ Jemaat</h1>
       </div>
       <div className={arsenal.className}>
         <div className="w-full flex flex-col items-center ">
           {dataBpjj.map((item, index) => (
-            <div key={index} className="flex  w-4/6 py-3 px-4">
-              <div className="flex w-[300px] gap-4">
-                <p className="w-[250px]">{item.position} </p>
+            <div key={index} className="flex  md:w-4/6 w-full py-3 px-4">
+              <div className="flex md:w-[300px] gap-4">
+                <p className="md:w-[250px] w-[150px]">{item.position} </p>
                 <p>:</p>
               </div>
               <p className="font-bold"> {item.name}</p>

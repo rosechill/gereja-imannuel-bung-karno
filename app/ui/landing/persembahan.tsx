@@ -1,5 +1,5 @@
 'use client'
-import { arsenal, rightous } from '@/app/ui/font'
+import { rightous } from '@/app/ui/font'
 import React from 'react'
 import BorderSection from '../borderSection'
 import Image from 'next/image'

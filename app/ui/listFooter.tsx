@@ -14,8 +14,8 @@ export default function ListFooter() {
 
   return (
     <>
-      <div className='flex desktop:flex-row flex-col desktop:gap-0 gap-12 desktop:justify-between justify-center'>
-        <div>
+      <div className="flex flex-wrap md:justify-evenly justify-start gap-12">
+        <div className="">
           <div className={rightous.className}>
             <h1 className="desktop:text-2xl text-xl pb-4">GPIB Immanuel Bung Karno</h1>
           </div>
@@ -27,7 +27,7 @@ export default function ListFooter() {
             <p>telah di terapkan sejak awal.</p>
           </div>
         </div>
-        <div>
+        <div className="">
           <div className={rightous.className}>
             <h1 className="desktop:text-2xl text-xl pb-4">Contact</h1>
           </div>
@@ -72,7 +72,7 @@ export default function ListFooter() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="">
           <div className={rightous.className}>
             <h1 className="desktop:text-2xl text-xl pb-4">Follow Us</h1>
           </div>
@@ -106,7 +106,7 @@ export default function ListFooter() {
           </div>
         </div>
       </div>
-      <p className=' text-xs text-gray-400'>Copyright © 2022 GPIB Immanuel Bung Karno</p>
+      <p className=" text-xs text-gray-400">Copyright © 2022 GPIB Immanuel Bung Karno</p>
     </>
   )
 }

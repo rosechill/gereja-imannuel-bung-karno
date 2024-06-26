@@ -1,4 +1,4 @@
-import { arsenal, rightous } from '@/app/ui/font'
+import { rightous } from '@/app/ui/font'
 import React from 'react'
 import { dataUnduhan } from '@/app/lib/dataUnduhan'
 import BorderSection from '../borderSection'

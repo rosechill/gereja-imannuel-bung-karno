@@ -1,5 +1,5 @@
 import { rightous } from '@/app/ui/font'
-import { DummyVideo, FormulirLainnya, Galeri1, PelayananBackground, TataIbadah, WartaJemaat } from '@/public/images'
+import { Galeri1 } from '@/public/images'
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
@@ -61,7 +61,7 @@ export default function Gallery() {
       <div className={rightous.className}>
         <h1 className="desktop:text-3xl text-2xl text-center">GALERI</h1>
       </div>
-      <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-8 will-change-transform mx-40">
+      <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-8 will-change-transform md:mx-40 mx-4">
         {dataGallery.map((item, index) => (
           <Image
             key={index}

@@ -1,11 +1,11 @@
-import React from 'react';
-import { saveAs } from 'file-saver';
-import { Button } from '@nextui-org/react';
+import React from 'react'
+import { saveAs } from 'file-saver'
+import { Button } from '@nextui-org/react'
 
 const DownloadButton: React.FC = () => {
   const saveFile = () => {
-    saveAs('/files/example.pdf', 'example.pdf');
-  };
+    saveAs('/files/example.pdf', 'example.pdf')
+  }
 
   return (
     <div>
@@ -13,7 +13,7 @@ const DownloadButton: React.FC = () => {
         Download
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default DownloadButton;
+export default DownloadButton

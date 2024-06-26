@@ -1,7 +1,6 @@
 'use client'
 import { DataMenu } from '@/app/lib/definition'
 import { ChevronDown } from '@/public/icons'
-import Hamburger from '@/public/icons/hamburger'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 

@@ -8,7 +8,7 @@ export default function Sejarah() {
         <h1 className="desktop:text-3xl text-2xl text-center">SEJARAH GPIB IMMANUEL BUNG KARNO MATARAM</h1>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
           <p>
             GPIB Immanuel Bung Karno adalah sebuah bangunan gereja yang berada di wilayah Mataram - Lombok. Tepatnya di
             Jl. Bung Karno No.1, Mataram Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Bar. 83127. Gereja ini berada
@@ -18,12 +18,12 @@ export default function Sejarah() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h1 className="text-2xl ">SEJARAH GPIB IMMANUEL BUNG KARNO MATARAM</h1>
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
+          <h1 className="desktop:text-2xl text-xl ">SEJARAH GPIB IMMANUEL BUNG KARNO MATARAM</h1>
         </div>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
           <p>
             Pembangunan GPIB Immanuel Bung Karno di Mataram, Lombok, dimulai pada tahun 1988 sebagai hasil dari
             kolaborasi antara pemerintah daerah, tokoh masyarakat, dan komunitas Kristen Protestan di Lombok. Proyek ini
@@ -32,12 +32,12 @@ export default function Sejarah() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h1 className="text-2xl ">Peresmian Gereja</h1>
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
+          <h1 className="desktop:text-2xl text-xl ">Peresmian Gereja</h1>
         </div>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
           <p>
             GPIB Immanuel Bung Karno diresmikan pada tanggal 2 Mei 2001 oleh Pendeta R.A Wanai M.Th. Upacara peresmian
             ini dihadiri oleh berbagai tokoh gereja dan masyarakat setempat, termasuk Bapak Pendeta Lembong, Bapak
@@ -47,12 +47,12 @@ export default function Sejarah() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h1 className="text-2xl ">Tantangan dan Pelembagaan</h1>
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
+          <h1 className="desktop:text-2xl text-xl ">Tantangan dan Pelembagaan</h1>
         </div>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
           <p>
             Pada tahun 2015, GPIB Immanuel Bung Karno menghadapi berbagai tantangan internal dan eksternal. Di bawah
             kepemimpinan Pendeta Adri Syamsuddin, gereja ini menjalani proses pendewasaan dan mendirikan majelis jemaat
@@ -62,12 +62,12 @@ export default function Sejarah() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h1 className="text-2xl ">Peran Gereja Saat Ini</h1>
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
+          <h1 className="desktop:text-2xl text-xl ">Peran Gereja Saat Ini</h1>
         </div>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="desktop:w-3/4 w-full m-0-auto desktop:px-0 px-4">
           <p>
             Sejak pelembagaan resmi, GPIB Immanuel Bung Karno terus berfungsi sebagai pusat kegiatan keagamaan dan
             sosial bagi komunitas Kristen Protestan di Mataram. Gereja ini menyelenggarakan ibadah rutin setiap minggu

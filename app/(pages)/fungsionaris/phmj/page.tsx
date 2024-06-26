@@ -63,35 +63,35 @@ export default function PHMJ() {
   return (
     <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
-        <h1 className="text-2xl text-center">PHMJ Periode 2022-2025</h1>
+        <h1 className="desktop:text-2xl text-xl text-center">PHMJ Periode 2022-2025</h1>
       </div>
       <BorderSection />
       <div className={arsenal.className}>
         <div className="w-full flex flex-col items-center ">
           {data.map((item, index) => (
-            <div key={index} className="flex  w-4/6 py-3 px-4">
-              <div className="flex w-[220px] gap-4">
-                <p className="w-[150px]">{item.position} </p>
+            <div key={index} className="flex  sm:w-4/6 w-full py-3 px-4">
+              <div className="flex md:w-[220px] gap-4  ">
+                <p className="desktop:w-[150px] w-[100px]">{item.position} </p>
                 <p>:</p>
               </div>
-              <p className="font-bold"> {item.name}</p>
+              <p className="font-bold ps-4"> {item.name}</p>
             </div>
           ))}
         </div>
       </div>
       <BorderSection />
       <div className={rightous.className}>
-        <h1 className="text-2xl text-center">Pendeta Jemaat</h1>
+        <h1 className="desktop:text-2xl text-xl text-center">Pendeta Jemaat</h1>
       </div>
       <div className={arsenal.className}>
         <div className="w-full flex flex-col items-center ">
           {dataJemaat.map((item, index) => (
-            <div key={index} className="flex  w-4/6 py-3 px-4">
-              <div className="flex w-[220px] gap-4">
-                <p className="w-[150px]">{item.position} </p>
+            <div key={index} className="flex  sm:w-4/6 w-full py-3 px-4">
+              <div className="flex md:w-[220px] gap-4">
+                <p className="desktop:w-[150px] w-[100px]">{item.position} </p>
                 <p>:</p>
               </div>
-              <p className="font-bold"> {item.name}</p>
+              <p className="font-bold ps-4"> {item.name}</p>
             </div>
           ))}
         </div>

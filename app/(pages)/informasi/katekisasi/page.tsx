@@ -6,16 +6,18 @@ export default function Katekisasi() {
   return (
     <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
-        <h1 className="desktop:text-3xl text-2xl text-center">SEJARAH GPIB IMMANUEL BUNG KARNO MATARAM</h1>
+        <h1 className="desktop:text-3xl text-2xl text-center">KATEKISASI</h1>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h2 className="text-2xl font-bold">KELAS KATEKISASI REGULER 2024 - 2025</h2>
+        <div className="desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto">
+          <h2 className="md:text-2xl text-xl font-bold desktop:text-start text-center">
+            KELAS KATEKISASI REGULER 2024 - 2025
+          </h2>
         </div>
       </div>
       <BorderSection />
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto flex flex-col gap-4">
+        <div className="desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto flex flex-col gap-4">
           <p>Salam sejahtera untuk kita. Semoga semua dalam keadaan baik.</p>
           <p>Pendaftaran Kelas Katekisasi (Reguler) Angkatan 2024-2025 telah dibuka. </p>
           <p>Pendaftaran akan ditutup padaSabtu, 4 Mei 2024.</p>
@@ -36,13 +38,13 @@ export default function Katekisasi() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto text-center">
-          <h2 className="text-2xl font-bold ">KELAS KATEKISASI REGULER 2024 – 2025</h2>
+        <div className="desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto text-center">
+          <h2 className="md:text-2xl text-xl font-bold ">KELAS KATEKISASI REGULER 2024 – 2025</h2>
           <div className="w-2/4 m-0-auto h-[2px] bg-black mt-1"></div>
         </div>
       </div>
       <div className={arsenal.className}>
-        <div className="flex flex-col w-3/4 m-0-auto gap-4">
+        <div className="flex flex-col desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto gap-4">
           <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-left rtl:text-right">
               <thead className="uppercase">
@@ -89,13 +91,13 @@ export default function Katekisasi() {
         </div>
       </div>
       <div className={rightous.className}>
-        <div className="w-3/4 m-0-auto">
-          <h2 className="text-2xl font-bold">KELAS KATEKISASI KHUSUS</h2>
+        <div className="desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto">
+          <h2 className="md:text-2xl text-xl font-bold desktop:text-start text-center">KELAS KATEKISASI KHUSUS</h2>
         </div>
       </div>
       <BorderSection />
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto flex flex-col gap-4">
+        <div className="desktop:w-3/4 w-full desktop:px-0 px-4 m-0-auto flex flex-col gap-4">
           <p>
             1. Pelayanan Katekisasi Khusus a/n Sdri. Leni Andriani dan Sdri. Ni Wayan Widyastuti mulai bulan Maret 2024.
           </p>

@@ -1,7 +1,6 @@
 import { arsenal, rightous } from '@/app/ui/font'
 import { dataPelayanan } from '@/app/lib/dataPelayanan'
 import BorderSection from '@/app/ui/borderSection'
-import CardPelayanan from '@/app/ui/cardPelayanan'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -13,7 +12,7 @@ export default function pelayananKategorial() {
         <h1 className="desktop:text-3xl text-2xl text-center">PELAYANAN KATEGORIAL</h1>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto">
+        <div className="md:w-3/4 w-full md:px-0 px-4 m-0-auto">
           <p className="text-justify">
             Pelayanan Kategorial (Pelkat) dalam Gereja GPIB merupakan bagian penting dari Unit Misioner yang bertujuan
             memperkuat peran keluarga dalam kehidupan jemaat. Pelkat berfungsi sebagai sarana pembinaan warga Gereja
@@ -28,7 +27,7 @@ export default function pelayananKategorial() {
         </div>
       </div>
       <BorderSection />
-      <div className="grid grid-cols-3 w-3/4 justify-center items-center gap-8 m-0-auto will-change-transform ">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:w-3/4 justify-center items-center gap-8 m-0-auto will-change-transform ">
         {dataPelayanan.map((item, index) => (
           <Link
             href={item.link}

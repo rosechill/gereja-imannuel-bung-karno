@@ -2,7 +2,6 @@
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import { arsenal } from './font'
-import { Button } from '@nextui-org/react'
 import DownloadButton from './downloadButton'
 
 const months = [
@@ -69,7 +68,6 @@ export default function DatePicker() {
               onClick={handlePrevMonth}
               className="size-8 flex justify-center items-center text-gray-800 hover:bg-greenPrimary hover:text-white rounded-full disabled:opacity-50 disabled:pointer-events-none"
             >
-              f
               <svg
                 className="flex-shrink-0 size-4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -177,31 +175,31 @@ export default function DatePicker() {
 
       {pathname === '/unduhan/tataIbadah' && (
         <div className={arsenal.className}>
-          <div className="flex flex-col w-3/4 m-0-auto gap-4">
+          <div className="flex flex-col sm:w-3/4 w-full sm:px-0 px-4 m-0-auto gap-4">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
               <table className="w-full text-center">
                 <thead className="uppercase">
                   <tr className="grid" style={{ gridTemplateColumns: '1fr 4fr 2fr' }}>
-                    <th scope="col" className="px-6 py-2 border">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border">
                       No
                     </th>
-                    <th scope="col" className="px-6 py-2 border ">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border ">
                       Tata Ibadah
                     </th>
-                    <th scope="col" className="px-6 py-2 border">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border">
                       unduhan
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className=" odd:bg-whiteSecondary grid" style={{ gridTemplateColumns: '1fr 4fr 2fr' }}>
-                    <th scope="row" className="border px-6 py-4 font-medium text-gray-900 ">
+                    <th scope="row" className="border sm:px-6 px-0 py-4 font-medium text-gray-900 ">
                       1
                     </th>
-                    <td className="px-6 py-4 border">
+                    <td className="sm:px-6 px-0 py-4 border">
                       Tata Ibadah {selectedDay} {months[selectedMonth]} {selectedYear}
                     </td>
-                    <td className="px-6 py-2 border">
+                    <td className="sm:px-6 px-0 py-2 border">
                       <DownloadButton />
                     </td>
                   </tr>
@@ -214,31 +212,31 @@ export default function DatePicker() {
 
       {pathname === '/unduhan/wartaJemaat' && (
         <div className={arsenal.className}>
-          <div className="flex flex-col  w-3/4 m-0-auto gap-4">
+          <div className="flex flex-col  sm:w-3/4 w-full sm:px-0 px-4 m-0-auto gap-4">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
               <table className="w-full text-center">
                 <thead className="uppercase">
                   <tr className="grid" style={{ gridTemplateColumns: '1fr 4fr 2fr' }}>
-                    <th scope="col" className="px-6 py-2 border">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border">
                       No
                     </th>
-                    <th scope="col" className="px-6 py-2 border ">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border ">
                       Warta Jemaat
                     </th>
-                    <th scope="col" className="px-6 py-2 border">
+                    <th scope="col" className="sm:px-6 px-0 py-2 border">
                       unduhan
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className=" odd:bg-whiteSecondary grid" style={{ gridTemplateColumns: '1fr 4fr 2fr' }}>
-                    <th scope="row" className="border px-6 py-4 font-medium text-gray-900 ">
+                    <th scope="row" className="border sm:px-6 px-0 py-4 font-medium text-gray-900 ">
                       1
                     </th>
-                    <td className="px-6 py-4 border">
+                    <td className="sm:px-6 px-0 py-4 border">
                       Warta Jemaat {selectedDay} {months[selectedMonth]} {selectedYear}
                     </td>
-                    <td className="px-6 py-2 border">
+                    <td className="sm:px-6 px-0 py-2 border">
                       <DownloadButton />
                     </td>
                   </tr>

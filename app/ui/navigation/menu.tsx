@@ -9,7 +9,10 @@ import MenuMobile from './menuMobile'
 
 export default function Menu() {
   return (
-    <Navbar maxWidth="full" className="fixed top-0 flex justify-between desktop:px-4 px-0 py-4 bg-whiteSecondary shadow-sm">
+    <Navbar
+      maxWidth="full"
+      className="fixed top-0 flex justify-between desktop:px-4 px-0 py-4 bg-whiteSecondary shadow-sm"
+    >
       <Link href={'/'}>
         <Image src={LogoWithName} alt="Logo GPIB" width={300} height={300} className="" />
       </Link>
@@ -18,7 +21,7 @@ export default function Menu() {
           <ListMenu key={index} item={item} index={index} />
         ))}
       </div>
-      <MenuMobile/>
+      <MenuMobile />
     </Navbar>
   )
 }

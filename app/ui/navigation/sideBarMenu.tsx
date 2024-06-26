@@ -1,24 +1,33 @@
 'use client'
-import { useState } from 'react'
 import { ChevronDown } from '@/public/icons'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { DataMenu } from '@/app/lib/definition'
 import { cn } from '@/app/lib/cn'
+import { useState, useEffect, useRef } from 'react'
 
 export default function SideBarMenu({
   item,
   index,
+  isOpen,
+  toggleSubMenu,
 }: Readonly<{
   item: DataMenu
   index: number
+  isOpen: boolean
+  toggleSubMenu: (index: number) => void
 }>) {
   const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const contentRef = useRef<HTMLDivElement>(null)
+  const [maxHeight, setMaxHeight] = useState<string | number>('0')
 
-  const toggleSubMenu = () => {
-    setIsOpen(!isOpen)
-  }
+  useEffect(() => {
+    if (isOpen) {
+      setMaxHeight(contentRef.current?.scrollHeight || '0')
+    } else {
+      setMaxHeight('0')
+    }
+  }, [isOpen])
 
   return (
     <ul className="font-bold border-b border-gray-400 menu-list">
@@ -26,7 +35,7 @@ export default function SideBarMenu({
         {item.link ? (
           <Link
             href={item.link}
-            className={cn(' ps-4 h-12 flex items-center w-full', {
+            className={cn('ps-4 h-12 flex items-center w-full', {
               'text-white bg-greenPrimary': pathname === item.link,
               'hover:text-white hover:bg-greenPrimary': pathname !== item.link,
             })}
@@ -40,18 +49,21 @@ export default function SideBarMenu({
             </p>
           </Link>
         ) : (
-          <div className=" ps-4 flex gap-2 items-center cursor-pointer justify-between" onClick={toggleSubMenu}>
+          <div
+            className="px-4 flex gap-2 items-center cursor-pointer justify-between"
+            onClick={() => toggleSubMenu(index)}
+          >
             <span className="h-12 flex items-center">{item.title}</span>
             <ChevronDown />
           </div>
         )}
         <div
-          className={`transition-max-height duration-1000 ease-in-out overflow-hidden ms-12  ${
-            isOpen ? 'max-h-96 ' : 'max-h-0 '
-          }`}
+          ref={contentRef}
+          className="transition-all duration-500 ease-in-out overflow-hidden ms-12"
+          style={{ maxHeight }}
         >
-          {isOpen && item.submenu && (
-            <ul className="flex flex-col   ">
+          {item.submenu && (
+            <ul className="flex flex-col">
               {item.submenu.map((subItem, subIndex) => (
                 <li key={subIndex} className="hover:text-white hover:bg-greenPrimary">
                   {subItem.link ? (

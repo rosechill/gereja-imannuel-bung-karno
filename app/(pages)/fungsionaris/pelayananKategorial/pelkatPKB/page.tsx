@@ -1,19 +1,17 @@
 import BorderBigSection from '@/app/ui/borderBigSection'
-import BorderSection from '@/app/ui/borderSection'
 import { arsenal } from '@/app/ui/font'
-import InstagramKategorial from '@/app/ui/instagramKategorial'
-import { PelkatPAVideo, PelkatPKBLogo, PelkatPKBbg, PelkatPTLogo, PelkatPTbg } from '@/public/images'
+import { PelkatPKBLogo, PelkatPKBbg, PelkatPTLogo, PelkatPTbg } from '@/public/images'
 import Image from 'next/image'
 import React from 'react'
 
 export default function PelkatPKB() {
   return (
     <section className="flex flex-col justify-center gap-8 my-20 ">
-      <Image src={PelkatPKBbg} alt="pelkatPA" className="w-full" quality={100} />
+      <Image src={PelkatPKBbg} alt="pelkatPA min-h-[300px] object-cover" className="w-full" quality={100} />
       <div className={arsenal.className}>
-        <div className="flex flex-col gap-8 w-3/4 m-0-auto">
+        <div className="flex flex-col gap-8 lg:w-3/4 w-full lg:px-0 px-4 m-0-auto">
           <h1 className="desktop:text-3xl text-2xl text-center font-bold">
-            Tentang PELKAT Persekutuan Teruna (PT) GPIB Immanuel Bung Karno
+            Tentang PELKAT Kaum Bapak (PKB) GPIB Immanuel Bung Karno
           </h1>
           <BorderBigSection />
           <p>
@@ -32,8 +30,8 @@ export default function PelkatPKB() {
           </p>
           <div className="flex flex-col gap-4">
             <h2 className="text-xl font-bold">Arti Logo Pelkat Persekutuan Anak</h2>
-            <div className="flex items-center gap-12">
-              <Image src={PelkatPKBLogo} alt="pelkatPA" className="w-[200px] h-[200px]" />
+            <div className="flex md:flex-row flex-col items-center justify-center md:gap-12 gap-8">
+              <Image src={PelkatPKBLogo} alt="pelkatPA" className="w-[200px] h-[200px] md:m-0 m-0-auto" />
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col ">
                   <p className="font-bold">Alkitab Terbuka</p>

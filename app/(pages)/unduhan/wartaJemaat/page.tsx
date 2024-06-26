@@ -1,6 +1,6 @@
 import BorderSection from '@/app/ui/borderSection'
 import DatePicker from '@/app/ui/datePicker'
-import { arsenal, rightous } from '@/app/ui/font'
+import { rightous } from '@/app/ui/font'
 import React from 'react'
 
 export default function WartaJemaat() {
@@ -9,8 +9,8 @@ export default function WartaJemaat() {
       <div className={rightous.className}>
         <h1 className="desktop:text-3xl text-2xl text-center">WARTA JEMAAT</h1>
       </div>
-      <BorderSection/>
-      <DatePicker/>
+      <BorderSection />
+      <DatePicker />
     </section>
   )
 }

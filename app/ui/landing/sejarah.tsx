@@ -3,8 +3,6 @@
 import useInView from '@/app/lib/intersectionObserver'
 import { rightous } from '@/app/ui/font'
 import { motion } from 'framer-motion'
-import { DummyVideo } from '@/public/images'
-import Image from 'next/image'
 import React from 'react'
 
 export default function Sejarah() {
@@ -26,7 +24,7 @@ export default function Sejarah() {
       className="desktop:py-desktop py-8 flex flex-col justify-center text-center gap-8 bg-whiteSecondary will-change-transform"
     >
       <div className={rightous.className}>
-        <h1 className="desktop:text-3xl text-2xl">Sejarah GPIB Immanuel Bung Karno</h1>
+        <h1 className="desktop:text-3xl text-2xl ">Sejarah GPIB Immanuel Bung Karno</h1>
       </div>
       <iframe
         className="md:desktop:h-[600px] h-[300px] md:w-3/4 w-full m-0-auto rounded-xl desktp:px-0 px-4"

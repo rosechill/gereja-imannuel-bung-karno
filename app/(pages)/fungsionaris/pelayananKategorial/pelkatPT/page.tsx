@@ -8,9 +8,9 @@ import React from 'react'
 export default function PelkatPT() {
   return (
     <section className="flex flex-col justify-center gap-8 my-20 ">
-      <Image src={PelkatPTbg} alt="pelkatPA" className="w-full" quality={100} />
+      <Image src={PelkatPTbg} alt="pelkatPA" className="w-full min-h-[300px] object-cover" quality={100} />
       <div className={arsenal.className}>
-        <div className="flex flex-col gap-8 w-3/4 m-0-auto">
+        <div className="flex flex-col gap-8 lg:w-3/4 w-full lg:px-0 px-4 m-0-auto">
           <h1 className="desktop:text-3xl text-2xl text-center font-bold">
             Tentang PELKAT Persekutuan Teruna (PT) GPIB Immanuel Bung Karno
           </h1>
@@ -32,9 +32,9 @@ export default function PelkatPT() {
             penuh dinamika kedewasaan, baik dari segi biologis maupun psikologis.
           </p>
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-bold">Arti Logo Pelkat Persekutuan Anak</h2>
-            <div className="flex gap-12">
-              <Image src={PelkatPTLogo} alt="pelkatPA" className="w-[150px]" />
+            <h2 className="text-xl font-bold">Arti Logo Pelkat Persekutuan Teruna</h2>
+            <div className="flex md:flex-row flex-col md:justify-normal justify-center md:gap-12 gap-8">
+              <Image src={PelkatPTLogo} alt="pelkatPA" className="min-w-[150px] md:m-0 m-0-auto" />
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col ">
                   <p className="font-bold">Warna Kuning Telur</p>

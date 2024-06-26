@@ -11,9 +11,9 @@ export default function PersembahanDonasi() {
         <h1 className="desktop:text-3xl text-2xl text-center">PERSEMBAHAN & DONASI</h1>
       </div>
       <div className={arsenal.className}>
-        <div className="w-3/4 m-0-auto flex flex-col gap-4">
+        <div className="md:w-3/4 w-full md:px-0 px-4 m-0-auto flex flex-col gap-4">
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-bold">
+            <h2 className="md:text-xl font-bold">
               Informasi Persembahan Melalui Kasir Gereja, Transfer Bank/Internet Banking
             </h2>
             <p className="italic text-gray-500">
@@ -22,8 +22,8 @@ export default function PersembahanDonasi() {
             </p>
           </div>
           <div className="">
-            <h2 className="text-xl font-bold">QRIS PERSEMBAHAN</h2>
-            <Image src={QrisPersembahan} alt="Qris" className="pt-4" />
+            <h2 className="md:text-xl font-bold">QRIS PERSEMBAHAN</h2>
+            <Image src={QrisPersembahan} alt="Qris" className="pt-4 md:m-0 m-0-auto" />
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="font-bold">
@@ -31,18 +31,18 @@ export default function PersembahanDonasi() {
               Diakonia dapat di transfer melalui :
             </h2>
             <h2 className="font-bold">Rek. Giro Rutin :</h2>
-            <div className="flex gap-12 items-center">
-              <div className="w-[200px]">
-                <Image src={Bri} alt="bri" />
+            <div className="flex md:flex-row flex-col md:gap-12 gap-4 md:items-center">
+              <div className="md:w-[200px] ">
+                <Image className="m-0-auto" src={Bri} alt="bri" />
               </div>
               <div className="flex flex-col gap-4">
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nomor Rekening</p>
+                  <p className="w-[120px]  ">Nomor Rekening</p>
                   <p>:</p>
                   <p> GPIB Immanuel Mataram</p>
                 </div>
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nama Rekening</p>
+                  <p className="w-[120px]  ">Nama Rekening</p>
                   <p>:</p>
                   <p>0052 0100 0818 305</p>
                 </div>
@@ -53,17 +53,17 @@ export default function PersembahanDonasi() {
             <h2 className="font-bold">
               Persembahan Syukur Khusus Pembangunan Gedung Gereja dapat di transfer melalui :
             </h2>
-            <h2 className="font-bold">Rek. Giro Rutin :</h2>
-            <div className="flex gap-12 items-center">
-              <Image src={mandiri} alt="bri" />
+            <h2 className="font-bold">Rek. Giro Pembangunan :</h2>
+            <div className="flex md:flex-row flex-col md:gap-12 gap-4 md:items-center">
+              <Image className="m-0-auto" src={mandiri} alt="bri" />
               <div className="flex flex-col gap-4">
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nomor Rekening</p>
+                  <p className="w-[120px]  ">Nomor Rekening</p>
                   <p>:</p>
                   <p>1610 0070 6415 2</p>
                 </div>
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nama Rekening</p>
+                  <p className="w-[120px]  ">Nama Rekening</p>
                   <p>:</p>
                   <p>Gereja Protestan di Indonesia bagian Barat</p>
                 </div>
@@ -71,20 +71,19 @@ export default function PersembahanDonasi() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="font-bold">Rek. Tabungan Pembangunan :</h2>
-            <h2 className="font-bold">Rek. Giro Rutin :</h2>
-            <div className="flex gap-12 items-center">
-              <div className="w-[200px]">
-                <Image src={Bri} alt="bri" />
+            <h2 className="font-bold">Rek. Tabungan Pembangunan : </h2>
+            <div className="flex md:flex-row flex-col md:gap-12 gap-4 md:items-center">
+              <div className="md:w-[200px] ">
+                <Image className="m-0-auto" src={Bri} alt="bri" />
               </div>
               <div className="flex flex-col gap-4">
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nomor Rekening</p>
+                  <p className="w-[120px]  ">Nomor Rekening</p>
                   <p>:</p>
                   <p>0052 0100 0818 305</p>
                 </div>
                 <div className="flex gap-4">
-                  <p className="w-[120px]">Nama Rekening</p>
+                  <p className="w-[120px]  ">Nama Rekening</p>
                   <p>:</p>
                   <p>GPIB Immanuel Mataram</p>
                 </div>
@@ -96,10 +95,10 @@ export default function PersembahanDonasi() {
       <BorderSection />
       <div>
         <div className={arsenal.className}>
-          <div className="w-3/4 m-0-auto flex flex-col gap-12">
+          <div className="md:w-3/4 w-full md:px-0 px-4 m-0-auto flex flex-col gap-12">
             <div className="flex flex-col gap-4">
               <p className="italic text-gray-500">Note : Masukkan Angka Terakhir Sebagai Code Pembayaran</p>
-              <div className="flex gap-24">
+              <div className="flex md:flex-row flex-col md:gap-24 gap-8">
                 <div className="flex flex-col gap-2">
                   <p>Kode Angka :</p>
                   <p className="font-bold">1. Persepuluhan Persembahan</p>

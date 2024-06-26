@@ -30,7 +30,7 @@ export default function TemaTahunan() {
           <h2 className="desktop:text-2xl tex-xl">Periode 2024-2025</h2>
         </div>
       </div>
-      <p className="desktop:text-xl desktop:px-80">
+      <p className="desktop:text-xl desktop:px-80 px-4">
         “Melayani dan bersaksi secara interaktif berbasis komunitas digital dengan semangat gotong royong demi
         kesejahteraan bangsa” (Kisah Para Rasul 4 : 32)
       </p>
