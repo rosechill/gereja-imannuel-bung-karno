@@ -35,7 +35,7 @@ export default function ListFooter() {
             <div className="flex flex-col gap-4 ">
               <Link
                 target="_blank"
-                href={'/'}
+                href={'https://api.whatsapp.com/send/?phone=%2B6285311221292&text&type=phone_number&app_absent=0'}
                 className="flex gap-4 items-center"
                 onMouseEnter={() => handleMouseEnter('Phone')}
                 onMouseLeave={handleMouseLeave}
@@ -45,7 +45,7 @@ export default function ListFooter() {
               </Link>
               <Link
                 target="_blank"
-                href={'/'}
+                href={'https://mail.google.com/'}
                 className="flex gap-4 items-center"
                 onMouseEnter={() => handleMouseEnter('Location')}
                 onMouseLeave={handleMouseLeave}
@@ -58,7 +58,7 @@ export default function ListFooter() {
               </Link>
               <Link
                 target="_blank"
-                href={'/'}
+                href={'https://maps.app.goo.gl/SEverbTbR696Zgzu6'}
                 className="flex gap-4 items-center"
                 onMouseEnter={() => handleMouseEnter('Email')}
                 onMouseLeave={handleMouseLeave}
@@ -79,7 +79,7 @@ export default function ListFooter() {
           <div className={arsenal.className}>
             <div className="flex gap-4">
               <Link
-                href={'/'}
+                href={'https://www.instagram.com/'}
                 target="_blank"
                 onMouseEnter={() => handleMouseEnter('Instagram')}
                 onMouseLeave={handleMouseLeave}
@@ -87,7 +87,7 @@ export default function ListFooter() {
                 <Instagram color={getColor('Instagram')} />
               </Link>
               <Link
-                href={'/'}
+                href={'https://www.facebook.com/'}
                 target="_blank"
                 onMouseEnter={() => handleMouseEnter('Facebook')}
                 onMouseLeave={handleMouseLeave}
@@ -95,7 +95,7 @@ export default function ListFooter() {
                 <Facebook color={getColor('Facebook')} />
               </Link>
               <Link
-                href={'/'}
+                href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
                 target="_blank"
                 onMouseEnter={() => handleMouseEnter('Youtube')}
                 onMouseLeave={handleMouseLeave}

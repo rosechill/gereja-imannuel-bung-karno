@@ -45,7 +45,7 @@ export default function Persembahan() {
       </div>
       <h2 className="desktop:text-xl font-bold">PERSEMBAHAN</h2>
       <Image src={Qris} alt="Qris" width={300} height={300} className="m-0-auto rounded-md" />
-      <Link href={'/'} className="flex justify-center items-center">
+      <Link href={'/informasi/persembahanDonasi'} className="flex justify-center items-center">
         <Button className="bg-greenPrimary text-whitePrimary text-center">Persembahan & Donasi</Button>
       </Link>
     </motion.div>

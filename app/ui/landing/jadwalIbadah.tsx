@@ -60,18 +60,16 @@ export default function JadwalIbadah() {
           <p>Keterangan: </p>
           <div className="flex flex-col gap-2 justify-start">
             <p>- Onsite</p>
-            <p className="flex flex-wrap gap-4 items-center">
-              <Link
-                target="_blank"
-                onMouseEnter={() => handleMouseEnter('Youtube')}
-                onMouseLeave={handleMouseLeave}
-                href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
-                className="flex flex-wrap gap-4 items-center"
-              >
-                <p className={hoveredIcon === 'Youtube' ? 'text-greenPrimary' : ''}>- Youtube Live Stream</p>
-                <Youtube color={hoveredIcon === 'Youtube' ? getColor('Youtube') : '#FF0000'} />
-              </Link>
-            </p>
+            <Link
+              target="_blank"
+              onMouseEnter={() => handleMouseEnter('Youtube')}
+              onMouseLeave={handleMouseLeave}
+              href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
+              className="flex flex-wrap gap-4 items-center"
+            >
+              <p className={hoveredIcon === 'Youtube' ? 'text-greenPrimary' : ''}>- Youtube Live Stream</p>
+              <Youtube color={hoveredIcon === 'Youtube' ? getColor('Youtube') : '#FF0000'} />
+            </Link>
           </div>
         </div>
       </div>
