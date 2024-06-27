@@ -55,7 +55,9 @@ export default function PersembahanDonasi() {
             </h2>
             <h2 className="font-bold">Rek. Giro Pembangunan :</h2>
             <div className="flex md:flex-row flex-col md:gap-12 gap-4 md:items-center">
-              <Image className="m-0-auto" src={mandiri} alt="bri" />
+              <div className="md:w-[200px] ">
+                <Image className="m-0-auto" src={mandiri} alt="bri" />
+              </div>
               <div className="flex flex-col gap-4">
                 <div className="flex gap-4">
                   <p className="w-[120px]  ">Nomor Rekening</p>
