@@ -67,11 +67,15 @@
     width: max-content;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
   }
 
-  .menu-item:hover .submenu,
-  .menu-item:focus-within .submenu {
+  .submenu.open {
     display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   .submenu-item {
@@ -82,4 +86,47 @@
   .submenu-item > span {
     cursor: pointer;
   }
+}
+
+
+/* Add this to your global CSS or a relevant CSS file */
+@keyframes complexShine {
+  0% {
+    background-position: -100%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(74, 255, 74, 0.3) 20%,
+    rgba(78, 174, 78, 0.5) 60%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200%;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.shine-effect:hover::before {
+  animation: complexShine 1s forwards;
+  opacity: 1;
 }

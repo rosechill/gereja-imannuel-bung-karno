@@ -14,7 +14,7 @@ export default function ListFooter() {
 
   return (
     <>
-      <div className="flex flex-wrap md:justify-evenly justify-start gap-12">
+      <div className="flex flex-wrap lg:justify-between md:justify-evenly justify-start gap-12">
         <div className="">
           <div className={rightous.className}>
             <h1 className="desktop:text-2xl text-xl pb-4">GPIB Immanuel Bung Karno</h1>
@@ -50,7 +50,7 @@ export default function ListFooter() {
                 onMouseEnter={() => handleMouseEnter('Location')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Location color={getColor('Location')} />
+                <Email color={getColor('Location')} />
                 <div style={{ color: getColor('Location') }}>
                   <p>gpib.mataram@yahoo.co.id</p>
                   <p>immanuel.bungkarno@gpib.or.id</p>
@@ -63,7 +63,7 @@ export default function ListFooter() {
                 onMouseEnter={() => handleMouseEnter('Email')}
                 onMouseLeave={handleMouseLeave}
               >
-                <Email color={getColor('Email')} />
+                <Location color={getColor('Email')} />
                 <div style={{ color: getColor('Email') }}>
                   <p>Jl. Bung Karno No.1, Mataram Tim., Kec. Mataram, Kota</p>
                   <p>Mataram, Nusa Tenggara Bar. 83127, Indonesia</p>

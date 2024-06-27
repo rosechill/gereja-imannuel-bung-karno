@@ -21,9 +21,9 @@ const MenuMobile = () => {
 
   return (
     <div className="flex justify-center items-center gap-4 desktop:hidden ">
-      <Button className="bg-whiteSecondary flex justify-center items-center z-40" onClick={toggleMenu}>
-        {isOpen ? <Close /> : <Hamburger />}
-      </Button>
+      <button className="bg-black flex justify-center items-center z-40 rounded-full p-3" onClick={toggleMenu}>
+        {isOpen ? <Close color='white' /> : <Hamburger color='white' />}
+      </button>
       {isOpen && (
         <div className="bg-whitePrimary min-h-screen absolute left-0 -top-4 w-full pt-20  overflow-important">
           <div className="flex flex-col">

@@ -1,11 +1,12 @@
 'use client'
 import { rightous } from '@/app/ui/font'
-import React from 'react'
+import React, { useState } from 'react'
 import BorderSection from '../borderSection'
 import { Button } from '@nextui-org/react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import useInView from '@/app/lib/intersectionObserver'
+import { Youtube } from '@/public/icons'
 
 export default function JadwalIbadah() {
   const [ref, isVisible] = useInView()
@@ -14,6 +15,11 @@ export default function JadwalIbadah() {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
   }
+  const [hoveredIcon, setHoveredIcon] = useState(null)
+  const handleMouseEnter = (icon: any) => setHoveredIcon(icon)
+  const handleMouseLeave = () => setHoveredIcon(null)
+  const getColor = (icon: any) => (hoveredIcon === icon ? '#5F9556' : '#000')
+
   return (
     <motion.div
       ref={ref}
@@ -54,7 +60,18 @@ export default function JadwalIbadah() {
           <p>Keterangan: </p>
           <div className="flex flex-col gap-2 justify-start">
             <p>- Onsite</p>
-            <p>- Live Stream (Youtube/@GPIBImmanuelBungKarnoMataram) </p>
+            <p className="flex flex-wrap gap-4 items-center">
+              <Link
+                target="_blank"
+                onMouseEnter={() => handleMouseEnter('Youtube')}
+                onMouseLeave={handleMouseLeave}
+                href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
+                className="flex flex-wrap gap-4 items-center"
+              >
+                <p className={hoveredIcon === 'Youtube' ? 'text-greenPrimary' : ''}>- Youtube Live Stream</p>
+                <Youtube color={hoveredIcon === 'Youtube' ? getColor('Youtube') : '#FF0000'} />
+              </Link>
+            </p>
           </div>
         </div>
       </div>

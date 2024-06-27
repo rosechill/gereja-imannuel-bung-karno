@@ -4,16 +4,16 @@ export const dataUnduhan = [
   {
     title: 'Warta Jemaat',
     imgPath: WartaJemaat,
-    link: '/wartaJemaat',
+    link: '/unduhan/wartaJemaat',
   },
   {
     title: 'Tata Ibadah',
     imgPath: TataIbadah,
-    link: '/tataIbadah',
+    link: '/unduhan/tataIbadah',
   },
   {
     title: 'Formulir Lainnya',
     imgPath: FormulirLainnya,
-    link: '/formulirLainnya',
+    link: '/unduhan/formulirLainnya',
   },
 ]

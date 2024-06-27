@@ -1,8 +1,10 @@
+'use client'
 import { arsenal, rightous } from '@/app/ui/font'
 import BorderSection from '@/app/ui/borderSection'
-import React from 'react'
+import React, { useState } from 'react'
 import TableIbadah from './tableIbadah'
 import Link from 'next/link'
+import { Youtube } from '@/public/icons'
 
 const data = [
   {
@@ -47,6 +49,11 @@ const data = [
   },
 ]
 export default function JadwalIbadah() {
+  const [hoveredIcon, setHoveredIcon] = useState(null)
+  const handleMouseEnter = (icon: any) => setHoveredIcon(icon)
+  const handleMouseLeave = () => setHoveredIcon(null)
+  const getColor = (icon: any) => (hoveredIcon === icon ? '#5F9556' : '#000')
+
   return (
     <section className="desktop:py-desktop py-8 flex flex-col justify-center gap-8 mt-20">
       <div className={rightous.className}>
@@ -85,12 +92,16 @@ export default function JadwalIbadah() {
                   <td className="md:px-6 px-0 py-4 border">
                     <div className="flex flex-col text-start">
                       <p className="ps-2">Onsite</p>
-                      <p className="ps-2">
-                        Online{' '}
-                        <Link className="text-red-500" href={''}>
-                          youtube
-                        </Link>{' '}
-                      </p>
+                      <Link
+                        target="_blank"
+                        onMouseEnter={() => handleMouseEnter('Youtube')}
+                        onMouseLeave={handleMouseLeave}
+                        href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
+                        className="flex flex-wrap gap-4 items-center"
+                      >
+                        <p className={hoveredIcon === 'Youtube' ? 'text-greenPrimary' : ''}>- Youtube Live Stream</p>
+                        <Youtube color={hoveredIcon === 'Youtube' ? getColor('Youtube') : '#FF0000'} />
+                      </Link>
                     </div>
                   </td>
                 </tr>

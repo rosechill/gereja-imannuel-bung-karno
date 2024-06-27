@@ -1,6 +1,7 @@
 import ContainerProvider from './containerProvider'
 import Footer from './footer'
 import Menu from './navigation/menu'
+import ScrollToTopButton from './scrollToTop'
 
 export default function Container({ children }: { readonly children: React.ReactNode }) {
   return (
@@ -11,6 +12,7 @@ export default function Container({ children }: { readonly children: React.React
           <div className="flex-1">{children}</div>
           <Footer />
         </div>
+        <ScrollToTopButton />
       </section>
     </ContainerProvider>
   )
