@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import TableIbadah from './tableIbadah'
 import Link from 'next/link'
 import { Youtube } from '@/public/icons'
+import clsx from 'clsx'
 
 const data = [
   {
@@ -91,15 +92,17 @@ export default function JadwalIbadah() {
                   <td className="md:px-6 px-0 py-4 border flex justify-center items-center">Minggu - 09:00 WITA</td>
                   <td className="md:px-6 px-0 py-4 border">
                     <div className="flex flex-col text-start">
-                      <p className="ps-2">Onsite</p>
+                      <p className="ps-2 text-center">Onsite</p>
                       <Link
                         target="_blank"
                         onMouseEnter={() => handleMouseEnter('Youtube')}
                         onMouseLeave={handleMouseLeave}
                         href={'https://www.youtube.com/@GPIBImmanuelBungKarnoMataram'}
-                        className="flex flex-wrap gap-4 items-center"
+                        className="flex flex-wrap gap-4 justify-center items-center"
                       >
-                        <p className={hoveredIcon === 'Youtube' ? 'text-greenPrimary' : ''}>- Youtube Live Stream</p>
+                        <p className={clsx('text-center', hoveredIcon === 'Youtube' ? 'text-greenPrimary' : '')}>
+                          - Youtube Live Stream
+                        </p>
                         <Youtube color={hoveredIcon === 'Youtube' ? getColor('Youtube') : '#FF0000'} />
                       </Link>
                     </div>
@@ -110,7 +113,7 @@ export default function JadwalIbadah() {
                     GPIB Immanuel Bung Karno, Jl. Bung Karno
                   </th>
                   <td className="md:px-6 px-0 py-4 border"> Minggu - 18:00 WITA</td>
-                  <td className="md:px-6 px-0 py-4 border">Gedung Serba Guna, Jl. Bung Karno Mataram</td>
+                  <td className="md:px-6 px-0 py-4 border">Onsite</td>
                 </tr>
               </tbody>
             </table>
@@ -201,14 +204,14 @@ export default function JadwalIbadah() {
                     GPIB Immanuel Bung Karno, Jl. Bung Karno
                   </th>
                   <td className="md:px-6 px-0 py-4 border"> Minggu - 18:00 WITA</td>
-                  <td className="md:px-6 px-0 py-4 border">Gedung Serba Guna, Jl. Bung Karno Mataram</td>
+                  <td className="md:px-6 px-0 py-4 border">Onsite</td>
                 </tr>
                 <tr className="grid grid-cols-3">
                   <th scope="row" className="border md:px-6 px-0 py-4 font-medium text-gray-900 ">
                     GPIB Immanuel Bung Karno, Jl. Bung Karno
                   </th>
                   <td className="md:px-6 px-0 py-4 border"> Minggu - 18:00 WITA</td>
-                  <td className="md:px-6 px-0 py-4 border">Gedung Serba Guna, Jl. Bung Karno Mataram</td>
+                  <td className="md:px-6 px-0 py-4 border">Onsite</td>
                 </tr>
               </tbody>
             </table>
@@ -247,7 +250,9 @@ export default function JadwalIbadah() {
       <div className={arsenal.className}>
         <p className="text-center italic md:px-0 px-4">
           Untuk melihat jadwal selengkapnya silahkan mengunduh warta jemaat pada menu{' '}
-          <span className="text-greenPrimary font-bold">Unduhan</span>
+          <Link href={'/unduhan/wartaJemaat'} target="_blank" className="cursor-pointer text-greenPrimary font-bold">
+            Unduhan
+          </Link>
         </p>
       </div>
     </section>

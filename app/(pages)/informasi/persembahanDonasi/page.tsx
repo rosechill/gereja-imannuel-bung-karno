@@ -1,6 +1,6 @@
 import { arsenal, rightous } from '@/app/ui/font'
 import BorderSection from '@/app/ui/borderSection'
-import { Bri, QrisPersembahan, mandiri } from '@/public/images'
+import { Bri, Qris, mandiri } from '@/public/images'
 import Image from 'next/image'
 import React from 'react'
 
@@ -23,7 +23,7 @@ export default function PersembahanDonasi() {
           </div>
           <div className="">
             <h2 className="md:text-xl font-bold">QRIS PERSEMBAHAN</h2>
-            <Image src={QrisPersembahan} alt="Qris" className="pt-4 md:m-0 m-0-auto" />
+            <Image src={Qris} width={300} height={300} alt="Qris" className="pt-4 md:m-0 m-0-auto" />
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="font-bold">

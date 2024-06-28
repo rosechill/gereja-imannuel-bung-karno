@@ -4,7 +4,8 @@ import InstagramKategorial from '@/app/ui/instagramKategorial'
 import { PelkatGPLogo, PelkatGPbg, PelkatPAVideo } from '@/public/images'
 import Image from 'next/image'
 import React from 'react'
-
+import instagramVideo from './insta'
+import InstagramEmbedVideo from './insta'
 export default function PelkatGP() {
   return (
     <section className="flex flex-col justify-center gap-8 my-20 ">
@@ -72,10 +73,12 @@ export default function PelkatGP() {
                 </div>
               </div>
             </div>
+            <div className="flex justify-center">
+              <InstagramEmbedVideo />
+            </div>
+            <p className="text-center italic">~I will walk in the liberty by which Christ has set me free ~</p>
+            <InstagramKategorial path="https://www.instagram.com/ptimmanuelbungkarno/" title="@gp_immanuelbungkarno" />
           </div>
-          <Image src={PelkatPAVideo} alt="pelkatPA" quality={100} className="w-full rounded-md max-h-[600px]" />
-          <p className="text-center italic">~VG Persekutuan Teruna GPIB Immanuel Bung Karno~</p>
-          <InstagramKategorial path="https://www.instagram.com/ptimmanuelbungkarno/" title="@gp_immanuelbungkarno" />
         </div>
       </div>
     </section>

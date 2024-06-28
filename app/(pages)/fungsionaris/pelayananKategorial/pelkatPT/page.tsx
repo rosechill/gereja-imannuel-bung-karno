@@ -54,7 +54,14 @@ export default function PelkatPT() {
               </div>
             </div>
           </div>
-          <Image src={PelkatPAVideo} alt="pelkatPA" quality={100} className="w-full rounded-md max-h-[600px]" />
+          <iframe
+            className="md:desktop:h-[600px] h-[300px] w-full m-0-auto rounded-xl desktp:px-0 px-4"
+            src="https://www.youtube.com/embed/J4PwtiwwUWY?si=uOQQ_2Lpxa8Lwp2e" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="no-referrer"
+            allowFullScreen
+          ></iframe>
           <p className="text-center italic">~VG Persekutuan Teruna GPIB Immanuel Bung Karno~</p>
           <InstagramKategorial path="https://www.instagram.com/ptimmanuelbungkarno/" title="@ptimmanuelbungkarno" />
         </div>

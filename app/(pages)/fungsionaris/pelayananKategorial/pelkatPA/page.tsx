@@ -52,7 +52,15 @@ export default function PelkatPA() {
               </div>
             </div>
           </div>
-          <Image src={PelkatPAVideo} alt="pelkatPA" quality={100} className="w-full rounded-md max-h-[600px]" />
+          {/* <Image src={PelkatPAVideo} alt="pelkatPA" quality={100} className="w-full rounded-md max-h-[600px]" /> */}
+          <iframe
+            className="md:desktop:h-[600px] h-[300px] w-full m-0-auto rounded-xl desktp:px-0 px-4"
+            src="https://www.youtube.com/embed/hT3YCYoNOOw?si=glJvvwvaffNTurlv" 
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="no-referrer"
+            allowFullScreen
+          ></iframe>
           <p className="text-center italic">
             ~Kegiatan Persekutuan Anak GPIB Immanuel Bung Karno Selama Bulan Maret 2024~
           </p>

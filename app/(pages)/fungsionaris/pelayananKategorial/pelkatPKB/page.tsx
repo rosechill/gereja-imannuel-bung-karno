@@ -29,8 +29,8 @@ export default function PelkatPKB() {
             yang mencakup rutinitas ibadah PKB di sektor pelayanan dan rumah tangga.
           </p>
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-bold">Arti Logo Pelkat Persekutuan Anak</h2>
-            <div className="flex md:flex-row flex-col items-center justify-center md:gap-12 gap-8">
+            <h2 className="text-xl font-bold">Arti Logo Pelkat Persekutuan Kaum Bapak</h2>
+            <div className="flex md:flex-row flex-col items-center  md:gap-12 gap-8">
               <Image src={PelkatPKBLogo} alt="pelkatPA" className="w-[200px] h-[200px] md:m-0 m-0-auto" />
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col ">
